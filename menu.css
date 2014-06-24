@@ -1,0 +1,237 @@
+#navcon {
+	z-index: 1;
+	position: absolute;
+	left: 225px;
+}
+
+#nav, #nav ul { /* all lists */
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	line-height: 1;
+}
+
+#nav a {
+	display: block;
+	font-size: 14px;
+	color:#FFFFFF;
+	padding-bottom: 5px;
+	padding-top: 8px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#nav li ul li a {
+	padding: 8px 0px;
+}
+
+#nav a:link {
+  text-decoration: none; 
+  color: #FFF;
+}
+#nav a:visited {
+  text-decoration: none; 
+  color: #FFF;
+}
+#nav a:active {
+  text-decoration: none; 
+  color: #FFF;
+}
+
+#nav li a:hover { /* For Main Module Item */
+  text-decoration: none; 
+  background-color: #000;
+}
+
+#nav li.clsclkd a { /* For Selected Main Module Item */
+  background-color: #000;
+}
+
+#nav li ul a { /* For SubMenus */
+  background-color: #0162c5 !important;
+}
+
+#nav li a:hover .menutext { /* For Selected Main Module Item TEXT */
+  color: #AAC113;
+  font-weight: bold;
+}
+
+#nav li.clsclkd a .menutext { /* For Selected Main Module Item TEXT */
+  color: #AAC113;
+  font-weight: bold;
+}
+
+#nav li.clsclkd a .clsmodimg { /* For Selected Main Module ICON */
+   background-position: -24px 0;
+}
+
+#nav li ul a:hover { /* For Submenus items */
+  text-decoration: none; 
+  background-color: #AAC113 !important;
+    -moz-box-shadow:1px 0px 4px 2px #54a5f7;
+    -ms-box-shadow:1px 0px 4px 2px #54a5f7;
+    -webkit-box-shadow:1px 0px 4px 2px #54a5f7;
+    box-shadow:1px 0px 4px 2px #54a5f7;
+}
+
+#nav li ul a.clsdisable:hover { /* For Disabled Submenus items */
+  text-decoration: none;
+  background-color: #0162c5 !important;
+  cursor: default;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#nav li ul a:hover .menusubtext {
+  color: #000;
+}
+
+#nav li ul a.clsdisable:hover .menusubtext {
+  color: #979797;
+}
+
+#nav li { /* all list items */
+	float: left;
+	padding-left: 2px;
+	padding-right: 1px;
+}
+
+#nav li a {
+	text-align: center;
+	width: 121px;
+	height: 23px;
+}
+
+#nav li a#menu-2 {
+	width: 83px;
+}
+
+#nav li a#menu-4 {
+	width: 100px;
+}
+
+#nav li a .clsmodimg {
+	float: left;
+	margin-left: 5px;
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	background-position: 0 0;
+}
+
+#nav li a:hover .clsmodimg {
+	background-position: -24px 0;
+}
+
+#nav li a .clssubmodimg {
+	float: left;
+	margin-left: 5px;
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+}
+
+#nav li a.clsdisable .clssubmodimg {
+	background-position: -16px;
+}
+
+#nav li a.clsdisable .menusubtext {
+	 color: #979797;
+}
+
+#nav li ul { /* second-level lists */
+	position: absolute;
+	background: #b3b3b3;
+	color: #000;
+	width: 196px;;
+	left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */
+	padding-top: 0px;
+	border-bottom: 0;
+	border-left: 0;
+	border-right: 0;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	 -moz-box-shadow:3px 3px 9px 2px #000;
+	 -ms-box-shadow:3px 3px 9px 2px #000;
+	 -webkit-box-shadow:3px 3px 9px 2px #000;
+	 box-shadow:3px 3px 9px 2px #000;
+}
+
+#nav li ul li a {
+	text-align: left;
+	width: 196px;
+	border:0;
+	font-weight: normal;
+}
+
+#nav li ul li {
+	width: 13em;
+    padding: 0px;
+/*	border-bottom: 1px solid #CCCCCC;*/
+}
+
+#nav li ul ul { /* third-and-above-level lists */
+	margin: -1em 0 0 8em;
+}
+
+#nav li:hover, #nav li.sfhover {
+	display: block;
+}
+
+#nav li:hover ul ul, #nav li.sfhover ul ul {
+	left: -999em;
+}
+
+#nav li:hover ul, #nav li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul { /* lists nested under hovered list items */
+	left: auto;
+}
+
+#nav ul li a:link {
+  text-decoration: none; 
+  color: #000000;
+}
+#nav ul li a:visited {
+  text-decoration: none; 
+  color: #000000;
+}
+#nav ul li a:active {
+  text-decoration: none; 
+  color: #000000;
+}
+#nav ul li a:hover {
+  text-decoration: none; 
+  color: #000;
+}
+
+#nav ul li a.clsdisable:link {
+  text-decoration: none; 
+  color: #828282;
+}
+#nav ul li a.clsdisable:visited {
+  text-decoration: none; 
+  color: #828282;
+}
+#nav ul li a.clsdisable:active {
+  text-decoration: none; 
+  color: #828282;
+}
+#nav ul li a.clsdisable:hover {
+  text-decoration: none; 
+  color: #828282;
+}
+
+.menutext {
+  line-height: 22px;
+  float: left;
+  margin-left: 5px;
+  color: #000;
+}
+
+.menusubtext {
+  line-height: 18px;
+  margin-left: 5px;
+  color: #FFF;
+}
